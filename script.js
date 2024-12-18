@@ -2,14 +2,22 @@
 let head = document.getElementById("heading");
 let btn = document.getElementById("btn");
 
+let back = 0;
+
 
 // event
-btn.addEventListener("click", function(){
+btn.addEventListener("click", function () {
 
-// heading change
-head.innerText = "Added To Friend";
+    if (back == 0) {
+        head.innerText = "Added To Friend"
+        btn.innerText = "Added"
+        back = 1;
+    }
 
-// button text change
-btn.innerText = "Added";
+    else {
+        head.innerText = "Add To Friend";
+        btn.innerText = "Add"
+        back = 0;
+    }
 
 })

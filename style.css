@@ -36,10 +36,16 @@ body {
 .frnd-ani {
     z-index: -1;
     background: darkblue;
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s;
 }
 
 .frnd:hover .frnd-ani {
     animation: rot linear infinite 2s alternate;
+    visibility: visible;
+    opacity: 1;
+
 }
 
 /* animation */
